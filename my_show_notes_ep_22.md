@@ -36,7 +36,7 @@ The basic IF statement looks like this:
         false_statement_3;
     }
     
-when the program runs, Perl evaluates the control expression.  If the expression
+When the program runs, Perl evaluates the control expression.  If the expression
 is true, then the first block of statements runs (the `true_statement` lines).
 If the control expression is false, then the second block of statements is executed
 instead.
