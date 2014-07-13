@@ -26,7 +26,9 @@ $message =~ tr/A-Za-z/N-ZA-Mn-za-m/;
 print "Here is the decoded message:\n>$message\n";
 
 # Here's a way to only add the extra input when we are in Windows.
-if ($ENV{OS} eq "Windows_NT") {
+# We check for an environment variable called OS and see if it is
+# set to "Windows_NT".  I don't know how reliable this will be.
+if ( ($ENV{OS}) && ($ENV{OS} eq "Windows_NT") ) {
     print "\nPress Enter to close window";
     <STDIN>;
 }
