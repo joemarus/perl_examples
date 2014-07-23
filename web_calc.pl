@@ -44,6 +44,7 @@ print "</SELECT>\n";
 print "<INPUT type=\"TEXT\" size=\"10\" name=\"arg2\" value=\"$value2\">\n";
 print "<P>\n";
 print '<INPUT type="SUBMIT" value="Calculate">';
+print "</FORM>\n";
 print "<HR />\n";
 print "Answer: ";
 if (($in{arg1}) && ($in{arg2})) {
